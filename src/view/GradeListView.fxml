@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox prefHeight="229.0" prefWidth="300" userData="Grade List" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.GradeListViewController">
+    <children>
+        <HBox prefHeight="258.0" prefWidth="346.0">
+            <children>
+                <VBox alignment="TOP_CENTER" prefHeight="295.0" prefWidth="129.0" spacing="10.0">
+                    <children>
+                        <Label alignment="CENTER" layoutX="36.0" text="Grade list" textAlignment="CENTER">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="gradeListAddButton" mnemonicParsing="false" onAction="#addGradeButtonPressed" prefHeight="31.0" prefWidth="79.0" text="Add" />
+                        <Button fx:id="gradeListRemoveButton" mnemonicParsing="false" onAction="#removeGradeButtonPressed" prefHeight="31.0" prefWidth="79.0" text="Remove" />
+                        <Button fx:id="gradeListDetilsButton" mnemonicParsing="false" onAction="#showGradeDetailsButtonPressed" prefHeight="31.0" prefWidth="79.0" text="Details" />
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <HBox.margin>
+                        <Insets top="5.0" />
+                    </HBox.margin>
+                </VBox>
+                <ScrollPane prefHeight="258.0" prefViewportHeight="160.0" prefViewportWidth="200.0" prefWidth="219.0">
+                    <content>
+                        <TableView fx:id="gradeListTable" prefHeight="239.0" prefWidth="216.0">
+                            <columns>
+                                <TableColumn fx:id="gradeColumn" prefWidth="82.0" text="Grade" />
+                                <TableColumn fx:id="courseColumn" prefWidth="103.0" text="Course" />
+                            </columns>
+                        </TableView>
+                    </content>
+                </ScrollPane>
+            </children>
+        </HBox>
+        <Label fx:id="errorLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="333.0" text="Label" textFill="RED" />
+    </children>
+</VBox>

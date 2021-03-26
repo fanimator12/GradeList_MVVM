@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Calendar/Calendar.iml" filepath="$PROJECT_DIR$/../Calendar/Calendar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/GradeList_MVVM.iml" filepath="$PROJECT_DIR$/.idea/GradeList_MVVM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TestCases/TestCases.iml" filepath="$PROJECT_DIR$/../TestCases/TestCases.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../UppercaseConverter/UppercaseConverter.iml" filepath="$PROJECT_DIR$/../UppercaseConverter/UppercaseConverter.iml" />
+    </modules>
+  </component>
+</project>

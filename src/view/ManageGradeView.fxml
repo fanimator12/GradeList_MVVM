@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<VBox prefHeight="280.0" prefWidth="320.0" spacing="10.0" userData="Manage Grade" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ManageGradeViewController">
+    <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="227.0" text="Add a grade">
+            <font>
+                <Font size="37.0" />
+            </font>
+        </Label>
+        <HBox alignment="CENTER">
+            <children>
+                <Label prefHeight="31.0" prefWidth="77.0" text="Course">
+                    <font>
+                        <Font size="21.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="courseTextField" prefHeight="25.0" prefWidth="76.0" />
+            </children>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </HBox>
+        <HBox alignment="CENTER">
+            <children>
+                <Label prefHeight="30.0" prefWidth="76.0" text="Grade">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="gradeTextField" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="74.0" />
+            </children>
+        </HBox>
+        <Pane layoutX="10.0" layoutY="125.0" prefHeight="40.0" prefWidth="227.0">
+            <children>
+                <Button layoutX="32.0" layoutY="2.0" mnemonicParsing="false" onAction="#addGradeSubmitButton" text="Submit">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </Button>
+                <Button layoutX="145.0" layoutY="2.0" mnemonicParsing="false" onAction="#addGradeCancelButton" text="Cancel">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+        <Pane>
+            <children>
+                <Label fx:id="errorLabel" layoutX="22.0" text="errorLabel" textFill="RED">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </children>
+</VBox>
